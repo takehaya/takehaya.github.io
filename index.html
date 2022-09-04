@@ -351,11 +351,16 @@
     <div class="container ">
       <div class="row ">
         <p>
-          Copyright (c) -2018 Takeru Hayasaka All Rights Reserved.
+          Copyright (c) <span id="currentYear"></span> Takeru Hayasaka All Rights Reserved.
         </p>
       </div>
     </div>
   </div>
+
+  <script>
+    let dateObj = new Date();
+    document.getElementById("currentYear").innerHTML = dateObj.getFullYear();
+  </script>
 
   <script src="js/bootstrap.min.js "></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
